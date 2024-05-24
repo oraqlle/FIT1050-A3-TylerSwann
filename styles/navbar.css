@@ -145,7 +145,7 @@
     z-index: 10;
   }
   #cs-navigation .cs-logo img {
-    width: 100%;
+    width: auto;
     height: 100%;
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
@@ -263,7 +263,7 @@
     height: auto;
     max-height: 65vh;
     margin: 0;
-    padding: 4rem 0 0 0;
+    padding: 1rem 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
