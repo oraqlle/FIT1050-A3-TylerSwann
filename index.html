@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/collection-1577.css" />
+    <link rel="stylesheet" href="styles/gallery.css" />
+    <link rel="stylesheet" href="styles/logos.css" />
+    <link rel="stylesheet" href="styles/collection-1552.css" />
+    <link rel="stylesheet" href="styles/home-about.css" />
+  </head>
+
+  <body>
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <script src="scripts/navbar.js"></script>
+
+    <header id="cs-navigation">
+      <div class="cs-container">
+        <!--Nav Logo-->
+        <!--Logo is turned white in the css with a filter on dark mode-->
+        <a href="" class="cs-logo" aria-label="back to home">
+          <img
+            src="imgs/logos/main-logo.svg"
+            alt="logo"
+            width="210"
+            height="29"
+            aria-hidden="true"
+            decoding="async"
+          />
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+          <!--Mobile Nav Toggle-->
+          <button class="cs-toggle" aria-label="mobile menu toggle">
+            <div class="cs-box" aria-hidden="true">
+              <span class="cs-line cs-line1" aria-hidden="true"></span>
+              <span class="cs-line cs-line2" aria-hidden="true"></span>
+              <span class="cs-line cs-line3" aria-hidden="true"></span>
+            </div>
+          </button>
+          <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+          <div class="cs-ul-wrapper">
+            <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+              <li class="cs-li">
+                <a href="" class="cs-li-link cs-active"> AFL </a>
+              </li>
+              <li class="cs-li">
+                <a href="" class="cs-li-link">F1</a>
+              </li>
+              <li class="cs-li">
+                <a href="" class="cs-li-link">Soccer</a>
+              </li>
+              <li class="cs-li">
+                <a href="" class="cs-li-link">Rugby</a>
+              </li>
+              <li class="cs-li">
+                <a href="" class="cs-li-link">Cricket</a>
+              </li>
+              <li class="cs-li">
+                <a href="" class="cs-li-link">Australian Open</a>
+              </li>
+              <li class="cs-li">
+                <a href="" class="cs-li-link">MotoGP</a>
+              </li>
+              <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+              <li class="cs-li cs-dropdown" tabindex="0">
+                <span class="cs-li-link">
+                  Services
+                  <img
+                    class="cs-drop-icon"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg"
+                    alt="dropdown icon"
+                    width="15"
+                    height="15"
+                    decoding="async"
+                    aria-hidden="true"
+                  />
+                </span>
+                <ul class="cs-drop-ul">
+                  <li class="cs-drop-li">
+                    <a href="" class="cs-li-link cs-drop-link">Registration</a>
+                  </li>
+                  <li class="cs-drop-li">
+                    <a href="" class="cs-li-link cs-drop-link">Our Classes</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="cs-li">
+                <a href="" class="cs-li-link"> Blog </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="cs-contact-group">
+          <a href="tel:03 9654 5448" class="cs-phone">
+            <img
+              class="cs-phone-icon"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg"
+              alt="logo"
+              width="24"
+              height="24"
+              aria-hidden="true"
+              decoding="async"
+            />
+            03 9654 5448
+          </a>
+          <div class="cs-social">
+            <a href="" class="cs-social-link">
+              <img
+                class="cs-social-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg"
+                alt="logo"
+                width="12"
+                height="12"
+                aria-hidden="true"
+                decoding="async"
+              />
+            </a>
+            <a href="" class="cs-social-link">
+              <img
+                class="cs-social-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twitter-1a.svg"
+                alt="logo"
+                width="12"
+                height="12"
+                aria-hidden="true"
+                decoding="async"
+              />
+            </a>
+            <a href="" class="cs-social-link">
+              <img
+                class="cs-social-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg"
+                alt="logo"
+                width="12"
+                height="12"
+                aria-hidden="true"
+                decoding="async"
+              />
+            </a>
+            <a href="" class="cs-social-link">
+              <img
+                class="cs-social-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg"
+                alt="logo"
+                width="12"
+                height="12"
+                aria-hidden="true"
+                decoding="async"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle -->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+                    <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+                    <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+                </button> -->
+      </div>
+    </header>
+
+    <main>
+      <!-- ============================================ -->
+      <!--                 Banner Image                 -->
+      <!-- ============================================ -->
+
+      <div class="cs-container">
+        <img
+          src="imgs/home-banner.webp"
+          alt="home-banner-image"
+          style="
+            object-fit: cover;
+            object-position: right 72%;
+            width: 100%;
+            height: 15rem;
+          "
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+
+      <!-- ============================================ -->
+      <!--                   Logos                      -->
+      <!-- ============================================ -->
+
+      <section id="logos-572">
+        <h2 style="font-size: var(--headerFontSize); text-align: center">
+          Shop By Brand
+        </h2>
+        <div class="cs-container">
+          <!--Ideally you want to use svg's for the file path image, which is why these aren't wrapped in picture elements for different screen sizes-->
+          <img
+            class="cs-logo"
+            src="imgs/logos/afl-logo.svg"
+            alt="logo"
+            width="128"
+            height="64"
+            loading="lazy"
+            decoding="async"
+          />
+          <img
+            class="cs-logo"
+            src="imgs/logos/bbl-logo.svg"
+            alt="logo"
+            width="128"
+            height="64"
+            loading="lazy"
+            decoding="async"
+          />
+          <img
+            class="cs-logo"
+            src="imgs/logos/f1-logo.svg"
+            alt="logo"
+            width="128"
+            height="64"
+            loading="lazy"
+            decoding="async"
+          />
+          <img
+            class="cs-logo"
+            src="imgs/logos/motogp-logo.svg"
+            alt="logo"
+            width="128"
+            height="64"
+            loading="lazy"
+            decoding="async"
+          />
+          <img
+            class="cs-logo"
+            src="imgs/logos/nrl-logo.svg"
+            alt="logo"
+            width="300"
+            height="100"
+            loading="lazy"
+            decoding="async"
+          />
+          <img
+            class="cs-logo"
+            src="imgs/logos/ao-logo.svg"
+            alt="logo"
+            width="128"
+            height="64"
+            loading="lazy"
+            decoding="async"
+          />
+          <img
+            class="cs-logo"
+            src="imgs/logos/a-leagues-logo.svg"
+            alt="logo"
+            width="128"
+            height="32"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!--              Collection 1552                 -->
+      <!-- ============================================ -->
+
+      <section id="collection-1552">
+        <h2 style="font-size: var(--headerFontSize); text-align: center">
+          Recommended For You
+        </h2>
+        <div class="cs-container">
+          <ul class="cs-card-group">
+            <li class="cs-item cs-item-offer">
+              <div class="cs-text-wrapper">
+                <span class="cs-offer-tag">FROM $20</span>
+                <h3 class="cs-h3">F1 Merchandise</h3>
+                <span class="cs-item-text"
+                  >Special offers for Australian Grand Prix gear!</span
+                >
+                <a class="cs-button-solid" href="/">Shop Now</a>
+                <picture class="cs-background" aria-hidden="true">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="imgs/items/2024-oracle-red-bull-racing-unisex-team-water-resistant-jacket-12005226-1600.jpg"
+                    width="365"
+                    height="201"
+                  />
+                </picture>
+              </div>
+            </li>
+            <li class="cs-item">
+              <a class="cs-category" href="/">AFL Jerseys</a>
+              <picture class="cs-background" aria-hidden="true">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src="imgs/items/2024-collingwood-mens-anzac-guernsey-12006021-600.jpg"
+                  width="365"
+                  height="201"
+                />
+              </picture>
+            </li>
+            <li class="cs-item">
+              <a class="cs-category" href="/">UCL Champions League Balls</a>
+              <picture class="cs-background" aria-hidden="true">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src="imgs/items/202324-ucl-champions-league-replica-match-ball-size-5-12006824-1600.jpg"
+                  width="365"
+                  height="201"
+                />
+              </picture>
+            </li>
+            <li class="cs-item">
+              <a class="cs-category" href="/">BBL Gear</a>
+              <picture class="cs-background" aria-hidden="true">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src="imgs/items/202324-melbourne-stars-mens-home-jersey-12003564-1600.jpg"
+                  width="365"
+                  height="201"
+                />
+              </picture>
+            </li>
+            <li class="cs-item">
+              <a class="cs-category" href="/">Australian Open Caps</a>
+              <picture class="cs-background" aria-hidden="true">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src="imgs/items/australian-open-adults-9forty-metal-ao-cap-purple-dusk-12003704-1600.jpg"
+                  width="365"
+                  height="201"
+                />
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!--               Collection 1577                -->
+      <!-- ============================================ -->
+
+      <section id="collection-1577">
+        <div class="cs-container">
+          <div class="cs-content">
+            <h2 class="cs-title">Shop By Category</h2>
+          </div>
+          <ul class="cs-card-group">
+            <li class="cs-item">
+              <a href="" class="cs-link">
+                <span class="cs-category">Clothing</span>
+                <picture class="cs-background" aria-hidden="true">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="imgs/items/2024-argentina-mens-home-jersey.png"
+                    width="365"
+                    height="201"
+                    alt="t-shirt"
+                  />
+                </picture>
+              </a>
+            </li>
+            <li class="cs-item">
+              <a href="" class="cs-link">
+                <span class="cs-category">Accessories</span>
+                <picture class="cs-background" aria-hidden="true">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="imgs/items/f1-albert-park-circuit-sun-bottle.png"
+                    width="365"
+                    height="201"
+                    alt="purse"
+                  />
+                </picture>
+              </a>
+            </li>
+            <li class="cs-item">
+              <a href="" class="cs-link">
+                <span class="cs-category">Headwear</span>
+                <picture class="cs-background" aria-hidden="true">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="imgs/items/2024-aston-martin-adult-fernando-alonso-cap-green-12004720-1600.jpg"
+                    width="365"
+                    height="201"
+                    alt="shoes"
+                  />
+                </picture>
+              </a>
+            </li>
+            <li class="cs-item">
+              <a href="" class="cs-link">
+                <span class="cs-category">Sale</span>
+                <picture class="cs-background" aria-hidden="true">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="imgs/items/202324-ucl-champions-league-replica-match-ball-size-5-12006824-1600.jpg"
+                    width="365"
+                    height="201"
+                    alt="perfume"
+                  />
+                </picture>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!--                   Gallery                    -->
+      <!-- ============================================ -->
+
+      <section id="gallery-1152">
+        <div class="cs-container">
+          <div class="cs-content">
+            <h2 class="cs-title">Recently Viewed</h2>
+          </div>
+          <div class="cs-gallery">
+            <!--Picture 1-->
+            <picture class="cs-image">
+              <img
+                loading="lazy"
+                decoding="async"
+                src="imgs/items/sherrin-afl-ball.png"
+                alt="gallery"
+                width="272"
+                height="320"
+              />
+            </picture>
+            <!--Picture 2-->
+            <picture class="cs-image">
+              <img
+                loading="lazy"
+                decoding="async"
+                src="imgs/items/ferrari-mens-race-hooded-sweat-jacket-red-9002565-600.jpg"
+                alt="gallery"
+                width="272"
+                height="320"
+              />
+            </picture>
+            <!--Picture 3-->
+            <picture class="cs-image">
+              <img
+                loading="lazy"
+                decoding="async"
+                src="imgs/items/2024-mercedes-amg-petronas-womens-team-hoodie-12004862-1600.jpg"
+                alt="gallery"
+                width="272"
+                height="320"
+              />
+            </picture>
+            <!--Picture 4-->
+            <picture class="cs-image">
+              <img
+                loading="lazy"
+                decoding="async"
+                src="imgs/items/oscar-piastri-12-scale-helmet-2024-12006905-1600.jpg"
+                alt="gallery"
+                width="272"
+                height="320"
+              />
+            </picture>
+            <!--Picture 5-->
+            <picture class="cs-image">
+              <img
+                loading="lazy"
+                decoding="async"
+                src="imgs/items/2024-mclaren-mens-team-setup-tee-autumn-gloryphantom-oscar-piastri-12005306-1600.jpg"
+                alt="gallery"
+                width="272"
+                height="320"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section id="home-about">
+        <div class="ha-container">
+          <span>ABOUT</span>
+          <h2>City Sports &amp; F1</h2>
+          <p>
+            Welcome to City Sports & F1, your very own hub for a wide range of
+            sports merchandise. As an official retailer, we have a huge
+            <a href="https://www.citysportsandf1.com.au/c/afl">AFL collection</a
+            >, as well as
+            <a href="https://www.citysportsandf1.com.au/c/formula-1"
+              >Formula One</a
+            >, soccer, rugby, cricket and tennis merchandise from across the
+            globe. For sports fans and collectors alike, this is your one stop
+            shop for sports merchandise. <br /><br />
+            We are an independent, family-run team who are always looking to
+            help you find what it is you are after. If you are on the hunt for a
+            piece of merchandise that we don't seem to have, simply get in touch
+            with us by phone on
+            <a href="tel:0396545448">0396545448</a>, or e-mail on <a
+              href="mailto:info@citysportsandf1.com.au"
+              >info@citysportsandf1.com.au</a
+            >. Our friendly sales staff will be more than happy to help you out.
+          </p>
+
+          <h3>Formula 1 Merchandise</h3>
+          <p>
+            We stock the latest merchandise from all your favourite teams and
+            drivers. If you are a fan of an F1 team, then you will be able to
+            browse through specific collections such <a
+              href="https://www.citysportsandf1.com.au/c/formula-1/mclaren"
+              >McLaren</a
+            >, AMG Petronas,
+            <a
+              href="https://www.citysportsandf1.com.au/c/formula-1/oracle-red-bull-racing"
+              >Red Bull Racing</a
+            >,
+            <a
+              href="https://www.citysportsandf1.com.au/c/formula-1/scuderia-ferrari"
+              >Scuderia Ferrari</a
+            >, BMW Motorsport, Renault and more. We also stock a wide variety of
+            merchandise from the Australian Formula 1 Grand Prix Event. Our F1
+            grand prix collection includes keyrings, event caps and t shirts for
+            men, women and children.
+          </p>
+
+          <h3>AFL Merchandise</h3>
+          <p>
+            This is also the home for all your AFL merchandise: we always have
+            the latest merchandise from every team in the league. With
+            guernseys, hoodies, jackets, polos and more, there's so much high
+            quality official apparel to get your hands on. On top of the wide
+            range of clothing, you will also see that we have bottles, balls,
+            luggage, keyrings and many more accessories. Not only do we have all
+            the latest stock, we also have an extensive AFL clearance range -
+            something for every team.
+          </p>
+
+          <h3>Australian Open Merchandise</h3>
+          <p>
+            The
+            <a href="https://www.citysportsandf1.com.au/c/australian-open"
+              >Australian Open</a
+            >
+            is one of the biggest sporting events in the calendar, not only in
+            the southern hemisphere but in the whole world. If you are looking
+            for official AO merch, then you are in luck. We stock official AO
+            range - the same merch available at Melbourne park, and so we have
+            all the latest branded t shirts, bottles, caps, towels and other
+            accessories. Whether you want something to play in, to chill out in,
+            or you are simply adding some merch to the collection, you will find
+            lots here to be excited about.
+          </p>
+
+          <h3>Soccer, Rugby, Cricket &amp; MotoGP Merchandise</h3>
+          <p>
+            But this is not even scratching the surface of our range, as we also
+            have lots to explore in other sports such as
+            <a href="https://www.citysportsandf1.com.au/c/soccer">Soccer</a>,
+            <a href="https://www.citysportsandf1.com.au/c/rugby">Rugby</a>,
+            <a href="https://www.citysportsandf1.com.au/c/cricket">Cricket</a>
+            and
+            <a href="https://www.citysportsandf1.com.au/c/moto-gp">MotoGP</a>.
+            In terms of soccer, we have merch from all the biggest international
+            teams such as
+            <a
+              href="https://www.citysportsandf1.com.au/c/soccer/manchester-united"
+              >Manchester United</a
+            >, Barcelona, Liverpool and Juventus, but then we also have a great
+            collection of Aussie soccer merchandise.
+            <br />
+            <br />
+            This goes for our rugby collection too. We have plenty of Wallabies,
+            All Blacks, Melbourne Storm and NSW and QLD State of Origin
+            merchandise: there'll be something for you whoever you follow. Don't
+            forget about our extensive cricket range including the Cricket
+            Australia range and all the Big Bash League teams. We also have
+            plenty of teamwear and Grand Prix Event merch in our Moto GP
+            collection that can't be missed.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+
+    <footer id="cs-footer-308">
+      <div class="cs-container">
+        <!-- Links -->
+        <table class="cs-nav">
+          <tr>
+            <th>
+              <span class="cs-header">Information</span>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <a class="cs-nav-link" href="">Home</a>
+            </td>
+            <td>
+              <a class="cs-nav-link" href="">FAQ</a>
+            </td>
+            <td>
+              <a class="cs-nav-link" href="">Delivery Policy</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a class="cs-nav-link" href="">About</a>
+            </td>
+            <td>
+              <a class="cs-nav-link" href="">Terms &amp; Conditions</a>
+            </td>
+            <td>
+              <a class="cs-nav-link" href="">Privacy Policy</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a class="cs-nav-link" href="">Contact Us</a>
+            </td>
+            <td>
+              <a class="cs-nav-link" href="">Newsletter</a>
+            </td>
+            <td>
+              <a class="cs-nav-link" href=""
+                >Exchanges, Returns &amp; Refunds Policy</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a class="cs-nav-link" href="">Free Click &amp; Collect</a>
+            </td>
+            <td>
+              <a class="cs-nav-link" href="">Sitemap</a>
+            </td>
+          </tr>
+        </table>
+        <!-- Contact Info -->
+        <ul class="cs-nav">
+          <li class="cs-nav-li">
+            <span class="cs-header">Contact</span>
+          </li>
+          <li class="cs-nav-li">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone-stroke.svg"
+              alt="phone"
+              width="24"
+              height="24"
+            />
+            <a class="cs-nav-link cs-phone" href="tel: 9654-5446"
+              >(03) 9654-5446</a
+            >
+          </li>
+          <li class="cs-nav-li">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/email-stroke.svg"
+              alt="email"
+              width="24"
+              height="24"
+            />
+            <a
+              class="cs-nav-link cs-email"
+              href="mailto:info@citysportsandf1.com"
+              >info@citysportsandf1.com.au</a
+            >
+          </li>
+          <li class="cs-nav-li">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin-stroke.svg"
+              alt="pin"
+              width="24"
+              height="24"
+            />
+            <a
+              class="cs-nav-link cs-address"
+              href=""
+              target="_blank"
+              rel="noopener"
+            >
+              116 Elizabeth Street<br />Melbourne, Victoria, Australia 3000
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="cs-bottom">
+        <!-- Socials -->
+        <table class="social-table">
+          <tr>
+            <td>
+              <div class="cs-logo-container">
+                <img src="imgs/logos/facebook-logo.svg" />
+                <img src="imgs/logos/instagram-logo.svg" />
+                <img src="imgs/logos/email-logo.svg" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="cs-logo-container">
+                <img src="imgs/logos/zip-pay-logo.svg" />
+                <img src="imgs/logos/paypal-logo.svg" />
+                <img src="imgs/logos/visa-logo.svg" />
+                <img src="imgs/logos/mc-logo.svg" />
+                <img src="imgs/logos/maestro-logo.svg" />
+                <img src="imgs/logos/jcb-logo.svg" />
+                <img src="imgs/logos/amex-logo.svg" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <!-- Copyright -->
+              <span class="cs-copyright"
+                >© Copyright 2024 - City Sports and F1</span
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <!-- Intelligent Retail -->
+              <div class="cs-logo-container">
+                <img src="imgs/logos/intelligent-retail-logo.svg" />
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </footer>
+  </body>
+</html>

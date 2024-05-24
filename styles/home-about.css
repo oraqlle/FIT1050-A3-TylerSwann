@@ -1,0 +1,39 @@
+@media only screen and (min-width: 0rem) {
+  #home-about {
+    padding: var(--sectionPadding);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f6;
+  }
+
+  #home-about span {
+    color: #03a4ff;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 25px;
+  }
+
+  #home-about h2 {
+    color: #03a4ff;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+  }
+
+  #home-about h3 {
+    color: #07b518;
+    text-align: left;
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  #home-about p {
+    font-size: 24px;
+  }
+
+  #home-about .ha-container {
+    width: 100%;
+    max-width: 82.375rem;
+    margin: auto;
+  }
+}
